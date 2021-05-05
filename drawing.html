@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Project 4 Writing Page</title>
+</head>
+<body>
+
+    <div class="title">writing center</div>
+        <div class="wrapper" id="wrapperId">
+            <canvas id="canvas" style="background-image: url('./assets/A.svg');"></canvas>
+            <div class="trace-letter" id = "letterTraced"></div>
+            <div class="letter-display">
+                Aa
+            </div>
+        </div>
+    <div class="directions">
+        press enter to change cases // 0 to clear canvas
+    </div>
+    <img class="sound-on" src="assets/sound.svg">
+    <!----put this at the end so the html loads first. we need canvas to load so we can calculate our offset-->
+    <script src="drawing.js" defer></script>
+</body>
+</html>

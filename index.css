@@ -1,0 +1,118 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #DCECEE;
+    margin:0px;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 4vw;
+    background-color: #017880;
+    width: 80vw;
+    height:100px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    color: #F5F5F5;
+    border: 5px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    font-style: Bold 700;
+    width: 80vw;
+    color: #FF5A5F; 
+    font-size: 7vw;
+    margin: 0;
+    margin-top: 25vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(-5px 5px 0px #017880);
+}
+
+a {
+    text-decoration: none;
+    color: #FF5A5F;
+    display: inline-block;
+    overflow-wrap: break-word;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+}
+
+#canvas {
+    width: 500px;
+    height: 500px;
+    background-color: #017880;
+    border-radius: 20px;
+    border: 1px solid black;
+    transition: ease all .5s;
+    background-size: 500px;
+    background: no-repeat;
+    background-position: center;
+}
+
+.sound-on {
+    position: fixed;
+    filter: invert(29%) sepia(51%) saturate(2732%) hue-rotate(160deg) brightness(89%) contrast(103%);
+    width: 50px;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.directions {
+    margin-left: 4vw;
+    margin-top: 30px;
+    color: #017880;
+}
+
+.wrapper {
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    margin-left: 8vw;
+    margin-top: 50px;
+    background-color: red;;
+}
+
+.trace-letter {
+    position:absolute;
+    top: 0;
+    width: 500px;
+    height: 500px;
+    z-index: -9999;
+    text-align: center;
+    background-color: #017880;
+    border-radius: 19px;
+    left: 1px;
+    top: 1px;
+    float: left;
+}
+
+.letter-display {
+    font-size: 300px;
+    position: relative;
+    float: right;
+    color: #FF5A5F;
+    background-color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+    .canvas {
+        margin: auto;
+        width: 400px;
+        height: 400px;
+    }
+    .wrapper {
+        margin-left: 0vw;
+        margin-top: 50px;
+    }
+}
